@@ -1,6 +1,6 @@
 ---
-name: Record meeting minutes.
-about: Fill out meeting minutes + record meeting.
+name: 'Record meeting minutes'.
+about: 'Fill out meeting minutes + record meeting.'
 title: meeting
 labels: meeting minutes
 assignees: Han
