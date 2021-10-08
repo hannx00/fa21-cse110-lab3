@@ -1,9 +1,9 @@
 ---
-name: Issues
-about: Create custom issues
-title: ''
-labels: ''
-assignees: ''
+name: Record meeting minutes.
+about: Fill out meeting minutes.
+title: meeting
+labels: meeting minutes
+assignees: Han
 
 ---
 
