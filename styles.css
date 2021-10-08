@@ -1,0 +1,88 @@
+/* CSS for index.html */
+@font-face {
+    font-family: 'Source Code Pro', monospace;;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+}
+
+* {
+    background-color: azure;
+    color: #AEADF0;
+    font-family: 'Source Code Pro', monospace;
+    /* position: static; */
+}
+
+h1, h2, h3 {
+    color: rgb(	104, 142, 38);
+    text-decoration: underline;
+    display: block;
+}
+
+nav {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav-items {
+    padding: 0 2rem 0;
+}
+
+audio {
+    width: 300px;
+}
+
+video {
+    max-width: 50%;
+    height: 100%;
+}
+
+img {
+    width: 50%;
+    max-height: 100%;
+}
+.text-area {
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-width: .5em;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    display: inline-block;
+}
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+  
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    margin: 2rem;
+}
+  
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer {
+    color: hsl(184, 9%, 62%);
+}
