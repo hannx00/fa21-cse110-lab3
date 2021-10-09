@@ -5,7 +5,7 @@
     src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 }
 
-/* bg color */
+/* bg color + id selector*/
 #special-grid {
     background-color: teal;
 }
