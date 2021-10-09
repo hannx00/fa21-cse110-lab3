@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style> 
+            p {font-size: 15pt;}
+        </style>
         <title>MyApp Meeting Minutes 1</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="content/cat.png"/>
@@ -20,10 +23,11 @@
             <div>
                 <section id="attendance"> 
                     <h2> Absences: </h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="grid-container">
+                        <div class="grid-item" id="special-grid">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>  
+                    </div>
                     <hr>
                 </section>
 
@@ -61,6 +65,7 @@
                     <span>
                         Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit,</strong> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, <em>sunt in culpa qui officia deserunt mollit anim id est laborum.</em>
                     </span>
+                    <p> THE END</p>
                     <hr>
                 </section>
 
@@ -79,6 +84,7 @@
                         </li>
                         <li>
                             <img src="content/team.jpg" id="team-sc" alt="team-sc"/>
+                            <p> cheese!</p>
                         </li>
                     </ul>
                     <hr>
@@ -101,13 +107,13 @@
                             <input type="text">
 
                             <div>
-                                <label>Did you </label><br>
+                                <label style="font-weight: bold; color: green;">Did you </label><br>
                                 <input type="checkbox">
                                 <label>eat and drink water?</label>
                             </div>
 
                             <div>
-                                <p>Choose your favorite pokemon starter</p>
+                                <p style="font-weight: bold; color: green;">Choose your favorite pokemon starter</p>
 
                                 <input type="radio" >
                                 <label>Bulbasaur</label><br/>
@@ -124,7 +130,7 @@
                             </div>
 
                             <div>
-                                <label>Choose an ice-cream flavor:</label>
+                                <label style="font-weight: bold; color: green;">Choose an ice-cream flavor:</label>
                                 <input list="flavors"/>
                                 
                                 <datalist id="flavors">
@@ -136,7 +142,7 @@
                             </div>
 
                             <div>
-                                <label for="pets">Choose your fighter:
+                                <label for="pets" style="font-weight: bold; color: green;">Choose your fighter:
                                 <select name="pets" id="pets">
                                   <option value="cat">CAT</option>
                                   <option value="dog">dog</option>
@@ -146,7 +152,7 @@
                                 </label>
                             </div>
 
-                            <button type="button">Submit</button>
+                            <button style="display: inline-block; cursor: pointer; padding: 10px">Submit</button>
                         </fieldset>
                     </form>
 
@@ -154,24 +160,14 @@
                 </section>
             </div>  
 
+            <h3> Initial</h3>
             <div class="flex-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>  
+=               <div>-</div>
+                <div>-</div>
+                <div>-</div>  
             </div>
-
-            <div class="grid-container">
-                <div class="grid-item">1</div>
-                <div class="grid-item">2</div>
-                <div class="grid-item">3</div>  
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>  
-                <div class="grid-item">7</div>
-                <div class="grid-item">8</div>
-                <div class="grid-item">9</div>  
-            </div>
-              
+            
+            <div style="margin-top: 2rem; margin-left: 2rem; margin-right: auto;"><a href="#"> FEEDBACK</a></div>
         </main>
         <footer>
             <p class="footer">Author: Han @ han001@ucsd.edu</p>

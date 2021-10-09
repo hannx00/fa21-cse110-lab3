@@ -1,16 +1,24 @@
 /* CSS for index.html */
+
 @font-face {
     font-family: 'Source Code Pro', monospace;;
     src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 }
 
+/* bg color */
+#special-grid {
+    background-color: teal;
+}
+
+/* universal selector */
 * {
     background-color: azure;
     color: #AEADF0;
     font-family: 'Source Code Pro', monospace;
-    /* position: static; */
+    font-size: 0.2in;
 }
 
+/* class selector */
 h1, h2, h3 {
     color: rgb(	104, 142, 38);
     text-decoration: underline;
@@ -20,6 +28,9 @@ h1, h2, h3 {
 nav {
     text-align: center;
 }
+.nav-items {
+    padding: 0 2rem 0;
+}
 
 .header {
     text-align: center;
@@ -27,23 +38,32 @@ nav {
     margin-bottom: 2rem;
 }
 
-.nav-items {
-    padding: 0 2rem 0;
-}
-
 audio {
     width: 300px;
 }
 
-video {
+video, img {
     max-width: 50%;
-    height: 100%;
-}
-
-img {
-    width: 50%;
+    height: 80%;
     max-height: 100%;
 }
+
+/* Adjacent sibling combinator */
+img + p {
+    font-weight: bold;
+    font-size: 1cm;
+}
+
+/* Combining Two Selectors */
+h1.header {
+    font-size: 2cm;
+}
+
+/* Descendant Combinator */
+ul li {
+    list-style-type: circle;
+}
+
 .text-area {
     border-style: solid;
     border-color: cornflowerblue;
@@ -54,35 +74,72 @@ img {
     display: inline-block;
 }
 
+/* flex box */
 .flex-container {
     display: flex;
-    background-color: DodgerBlue;
+    background-color:yellowgreen;
 }
   
 .flex-container > div {
-    background-color: #f1f1f1;
     margin: 10px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     font-size: 30px;
+    flex-wrap: nowrap;
+    flex-flow: column wrap;
+    flex-grow: 2;
+    text-align: center;
 }
-  
 
+/* Attribute Selector */
+a[href$="#"] {
+    font-style: italic;
+  }
+
+/* General sibling combinator */
+span ~ p {
+    color: red;
+}
+
+/* Grid */
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    margin: 2rem;
+    margin: auto;
+    position: inherit;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px;
+    gap: 15px 10px;
+    
 }
-  
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    position: static;
+}
+
+/* button hover & active */
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
 .footer {
     color: hsl(184, 9%, 62%);
 }
+
+/* media query for medium screen */
+@media only screen and (max-width: 760px) {
+    * {
+      background-color: lightblue;
+    }
+  }
