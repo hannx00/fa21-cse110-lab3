@@ -5,7 +5,7 @@ about: Fill out meeting minutes + record meeting.
 
 title: meeting
 
-labels: meeting minutes
+labels: documentation
 
 assignees: Han
 
@@ -18,7 +18,7 @@ about: Customize CSS and add stylesheet to the website.
 
 title: stylesheet
 
-labels: CSS, stylesheet
+labels: documentation
 
 assignees: Han
 
@@ -30,8 +30,17 @@ about: Add attendees' names on meeting minutes
 
 title: names
 
-labels: meeting minutes
+labels: documentation
 
 assignees: Han
 
+---
+name: Create standup
 
+about: Create & upload standup
+
+title: standup
+
+labels: standup
+
+assignees: Han
