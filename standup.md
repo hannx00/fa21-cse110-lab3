@@ -1,0 +1,3 @@
+- [] take attendance
+- [] fill in update
+- [] icebreaker q's + q&a
