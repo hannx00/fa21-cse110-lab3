@@ -1,3 +1,15 @@
-- [] take attendance
-- [] fill in update
-- [] icebreaker q's + q&a
+# IMPORTANT - NEED DONE ASAP
+- [] ..
+- [] ..
+- [] ..
+
+
+## TEAM UPDATE + PROGRESS
+- TEAM A
+    - []
+    - []
+- TEAM B
+- TEAM C
+
+## DIAGRAMS + MEDIA + MOCKUP
+[link]
